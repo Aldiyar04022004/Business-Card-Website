@@ -1,0 +1,1456 @@
+/* montserrat-100 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* montserrat-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.mySlides {display: none}
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: normal;
+    background-color: #262B31;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    background: #222327;
+    width: 7.5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #D6C199;
+    border-radius: 40px;
+}
+
+/*начало кода верхней понели*/
+
+.wrapper_line{
+    max-width: 1300px;
+    margin: 0 auto;
+    transition: all 0.25s;
+}
+
+.wrapper_line_active{
+    max-width: 100%;
+    margin: 0 auto;
+    transition: all 0.25s;
+    
+
+}
+
+.Polzovatel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 241px;
+}
+
+.avatarka{
+    background: url(../img/png/Avatar.png) no-repeat center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.logotip{
+    transform: translate(-5px,0);
+}
+
+.wrapper_header{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.liniya{
+    width: 100%;
+	height: 2.5px;
+    transition: all 0.25s;
+    border-radius: 50px;
+	background: #D6C199;
+    user-select:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.liniya_active{
+    width: 100%;
+	height: 2.5px;
+    transition: all 0.25s;
+    border-radius: none;
+	background: #D6C199;
+    user-select:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SOC{
+    opacity: 70%;
+    user-select:none;
+}
+
+.SOC:hover, .SOC:focus, .SOC:active{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.25s;
+    z-index: 998;
+}
+
+.header_active{
+    background: #262B31;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 10px;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_listSOC{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    transform: translate(14px,0);
+}
+
+.header_itemLM{
+    margin-right: 12px;
+}
+
+.header_itemNAV{
+    margin-right: 65px;
+}
+
+.header_link{
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.header_linkNAV_skill{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_about{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_portfolio{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_contact{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_skill_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_about_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_portfolio_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_contact_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.header_linkNUM{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    user-select:none;
+    color: #D6C199;
+    text-decoration: none;
+}
+
+.header_linkNUM:hover, .header_linkNUM:focus, .header_linkNUM:active{
+    opacity: 70%;
+    transition: all 0.25s;
+}
+
+.header_linkNAV:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_skill:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_about:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_portfolio:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.header_linkNAV_contact:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.header_linkNUM:hover, .header_linkNUM:focus, .header_linkNUM:active{
+    opacity: 70%;
+    transition: all 0.25s;
+}
+
+/*Конец кода верхней панели*/
+
+/*Начало кода интро*/
+
+.intro{
+    min-height: 100vh;
+    background: url(../img/png/City.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 230px;
+}
+
+.intro_tittle{
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    padding-top: 25px;
+    padding-left: 50px;
+    user-select:none;
+}
+
+.intro_name{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+    user-select:none;
+}
+
+.intro_text{
+    font-size: 16px;
+    padding-top: 5px;
+    padding-left: 50px;
+    width: 390px;
+	height: 150px;
+    user-select:none;
+}
+
+.wrapper_intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper_info{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Button{
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.Knopka_Nanyat{
+	width: 270px;
+	height: 50px;
+    border: 2.5px solid #D6C199;
+    border-radius: 30px;
+    color: #D6C199;
+    text-decoration: none;
+	background: none;
+    cursor: pointer;
+    user-select:none;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Knopka_Nanyat:hover{
+    border: 2.5px solid white;
+    color: white;
+    transition: all 0.25s;
+}
+
+.kvadrat{
+    width: 255px;
+	height: 340px;
+    border: 5px solid #D6C199;
+}
+
+.kvadrat2{
+    transform: translate(15px,12.5px);
+    width: 255px;
+	height: 340px;
+    background: url(../img/png/Photo\ 3.png) no-repeat center;
+    background-size: cover;
+    border: 5px solid #D6C199;
+    user-select:none;
+}
+
+/*Конец кода интро*/
+
+/*Начало кода навыков*/
+
+.skills{
+    padding-top: 150px;
+    border-top: 2.5px solid #D6C199;
+}
+
+.skills_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+    user-select:none;
+}
+
+.other_skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    user-select:none;
+    padding-top: 40px;
+}
+
+.web_desing{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.Web-desing_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 23.5px;
+}
+.Web-desing_text{
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    width: 250px;
+	height: 100px;
+}
+
+.backend{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backend_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 23.5px;
+    padding-top: 6px;
+}
+
+.backend_text{
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    padding-top: 6px;
+    width: 285px;
+	height: 90px;
+}
+
+.frontend{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.frontend_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 25px;
+    padding-top: 6px;
+}
+.frontend_text{
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    width: 300px;
+	height: 100px;
+}
+
+.game_dev{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+
+.game_dev_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 23.5px;
+}
+
+.game_dev_text{
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    width: 320px;
+}
+/*Конец кода навыков*/
+
+/*Начало кода "обо мне"*/
+
+.about_me{
+    padding-top: 90px;
+    user-select:none;
+}
+
+.about_me_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+}
+
+.about_me_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_me_text{
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    width: 500px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.about_me_mySlides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 930px;
+    height: max-content;
+    transition: all 0.25s;
+}
+
+.about_me_kvadrat{
+    width: 340px;
+	height: 460px;
+    transform: translate(-15px,-40px);
+    border: 5px solid #D6C199;
+}
+
+.about_me_kvadrat2{
+    width: 340px;
+	height: 460px;
+    border: 5px solid #D6C199;
+    background: url(../img/png/Photo\ 2.png);
+    background-size: cover;
+    transform: translate(-30px,12.5px);
+    user-select:none;
+}
+
+.about_me_kvadrat3{
+    width: 340px;
+	height: 460px;
+    border: 5px solid #D6C199;
+    background: url(../img/png/Photo\ 1.png);
+    background-size: cover;
+    transform: translate(-30px,12.5px);
+    user-select:none;
+}
+
+.about_me_kvadrat4{
+    width: 340px;
+	height: 460px;
+    border: 5px solid #D6C199;
+    background: url(../img/png/Photo\ 3.png);
+    background-size: cover;
+    transform: translate(-30px,12.5px);
+    user-select:none;
+}
+
+.about_me_Kartinka{
+    transform: translate(-30px,12.5px);
+    user-select:none;
+}
+
+.about_me_list{
+    font-family: 'Montserrat Light';
+    font-size: 25px;
+    color: #D6C199;
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    justify-content: space-between;
+    position:relative;
+    transform: translate(0,-50px);
+    margin-top: 40px;
+    user-select:none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.number{
+    position:relative;
+    font-family: 'Montserrat Light';
+    font-size: 25px;
+    color: #D6C199;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.number_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    justify-content: space-between;
+}
+
+.number:hover, .NumActive{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.strelki{
+    position:relative;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.strelki:hover, .strelki:focus, .strelki:active{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.poslovitsa{
+    font-family: 'Montserrat Light';
+    font-size: 19px;
+    padding-left: 50px;
+    transform: translate(150px,-100px);
+    color: #D6C199;
+    width: 400px;
+}
+/*Конец кода "обо мне"*/
+
+/*Начало кода "Мой прогресс"*/
+
+.my_progress{
+    padding-top: 90px;
+    padding-bottom: 60px;
+    user-select:none;
+    border-bottom: 2.5px solid #D6C199;
+}
+
+.my_progress_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+}
+
+.progress_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.opyt_tittle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+}
+
+.opyt_tittle_text{
+    font-family: 'Montserrat Medium';
+    font-size: 22px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.opyt_text{
+    width: 350px;
+    text-align: center;
+}
+
+.happy_tittle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+}
+
+.happy_tittle_text{
+    font-family: 'Montserrat Medium';
+    font-size: 22px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.happy_text{
+    transform: translate(0,-10px);
+    width: 350px;
+    text-align: center;
+}
+
+.happy_kartinka{
+    transform: translate(0,-10px);
+}
+
+.rabota_tittle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+}
+
+.rabota_tittle_text{
+    font-family: 'Montserrat Medium';
+    font-size: 22px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.rabota_text{
+    width: 350px;
+    text-align: center;
+}
+
+.rabota_kartinka{
+    transform: translate(0,-5px);
+}
+/*Конец кода "Мой прогресс"*/
+
+/*Начало кода "Портфолио"*/
+
+.portfolio{
+    min-width: 100vh;
+    background: url(../img/png/Top_Secret.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    user-select: none;
+}
+
+.portfolio_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+}
+
+.portfolio_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.portfolio_lister{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio_slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.krug{
+    width: 20px;
+	height: 20px;
+    border-radius: 100%;
+    background-color: #D6C199;
+    opacity: 70%;
+}
+
+.krug:hover, .krug:focus, .krug:active{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.slider{
+    padding-top: 15px;
+}
+
+.project{
+    opacity: 70%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project:hover{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+
+
+/*Конец кода "Портфолио"*/
+/*Начало кода "Отзывы"*/
+
+.Rewiew{
+    padding-top: 144px;
+    user-select: none;
+    border-top: 2.5px solid #D6C199;
+}
+
+.Rewiew_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+}
+
+.More_rewiews{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+    opacity: 70%;
+    text-decoration: none;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.More_rewiews:hover, .More_rewiews:focus, .More_rewiews:active{
+    opacity: 100%;
+    text-decoration: underline;
+    transition: all 0.25s;
+}
+
+.Rewiew_Content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.Rewiew_box{
+    padding-top: 25px;
+    text-align: center;
+    width: 350px;
+	height: 400px;
+    background-color: #D6C199;
+}
+
+.Rewiew_wrapper{
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.Rewiew_user_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 25px;
+    color: black;
+}
+
+.Rewiew_user_date{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: black;
+}
+
+.Rewiew_user_rate{
+    width: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Rewiew_user_star{
+    background: url(../img/svg/Star_off.svg) no-repeat center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.Rewiew_user_text{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: black;
+}
+
+.popup-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    background: #262B31;
+    border: 2.5px solid #D6C199;
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.close_popup{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/svg/Close.svg) no-repeat center;
+    border: none;
+    background-size: cover;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.close_popup:hover{
+    background: url(../img/svg/Close_Hover.svg) no-repeat center;
+    background-size: cover;
+    transition: all 0.25s;
+}
+
+.Rewiew_popup_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px;
+    user-select:none;
+}
+
+.Rewiew_popup_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Rewiew_popup_box{
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 350px;
+	height: 400px;
+    background-color: #D6C199;
+}
+
+.Rewiew_popup_user_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 25px;
+    color: black;
+}
+
+.Rewiew_popup_user_date{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: black;
+}
+
+.Rewiew_popup_user_text{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: black;
+}
+
+/*Конец кода "Отзывы"*/
+/*Начало кода "Контакты"*/
+
+.Contact{
+    padding-top: 50px;
+    padding-bottom: 125px;
+    user-select: none;
+}
+
+.Contact_tittle{
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    color: #D6C199;   
+    padding-left: 50px; 
+}
+
+.My_contacts{
+    padding-top: 70px;
+    padding-left: 50px;
+    width: 480px;
+    height: 517px;
+    background: url(../img/png/City_2.png) no-repeat center;
+    background-size: cover;
+}
+
+.My_contacts_info{
+    font-family: 'Montserrat Light';
+}
+
+.My_contacts_tittle{
+    font-family: 'Montserrat Medium';
+    font-size: 35px;
+}
+
+.My_contacts_item{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.My_contacts_item_tittle{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat Light';
+    font-size: 16px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+}
+
+.My_contacts_item_tittle:hover, .My_contacts_item_tittle:focus, .My_contacts_item_tittle:active{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.phone{
+    transform: translate(0,-5px);
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.phone:hover, .phone:focus, .phone:active{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.phone_tittle{
+    padding-top: 2.5px;
+}
+
+.icon{
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.icon:hover, .icon:focus, .icon:active{
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+/*Конец кода "Контакты"*/
+/*Начало кода "Сообщение"*/
+
+.Contact_Message{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.Message{
+    padding-top: 80px;
+}
+
+.search_form_bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.default_input{
+    width: 100%;
+    padding: 0 0 5px 0;
+    border: none;
+    border-bottom: 2.5px solid #D6C199;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.default_input::placeholder{
+    color: white;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.message_input{
+    margin-right: 125px;
+    width: 95%;
+    padding: 0 0 5px 0;
+    border: none;
+    border-bottom: 2.5px solid #D6C199;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.image_input{
+    margin-right: 125px;
+    width: 100%;
+    padding: 0 0 5px 0;
+    border: none;
+    border-bottom: 2.5px solid #D6C199;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.search_form_bottom,
+.search_form{
+    margin-top: 50px;
+}
+
+
+
+.message_input::placeholder{
+    color: white;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.image_input::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+
+.search_button{
+	width: 160px;
+	height: 30px;
+	background: transparent;
+    border: 2.5px solid #D6C199;
+    font-family: 'Montserrat Light';
+    font-size: 20px;
+    color: #D6C199;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.search_button:hover{
+    border: 2.5px solid white;
+    color: white;
+    transition: all 0.25s;
+}
+
+.search_form_LR{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search_form_file{
+    padding-top: 20px;
+}
+
+.ALERTINO{
+    margin-top: 40px;
+}
+
+/*Конец кода "Сообщение"*/
+/*Начало кода "Подвала"*/
+
+.footer{
+    background: #262B31;
+    height: 130px;
+}
+
+.Knopka2{
+	width: 150px;
+	height: 35px;
+    border: 2.5px solid #D6C199;
+    border-radius: 39px;
+    color: #D6C199;
+	background: none;
+    cursor: pointer;
+    user-select:none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Knopka2:hover, .Knopka2:focus, .Knopka2:active{
+    border: 2.5px solid white;
+    color: white;
+    transition: all 0.25s;
+}
+
+
+
+.footer_liner{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_listSOC{
+    margin-top: 7px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_nanyat_button{
+	width: 150px;
+	height: 35px;
+    border: 2.5px solid #D6C199;
+    border-radius: 30px;
+    color: #D6C199;
+	background: none;
+    cursor: pointer;
+    text-decoration: none;
+    user-select:none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_nanyat_button:hover{
+    border: 2.5px solid white;
+    color: white;
+    transition: all 0.25s;
+}
+
+.footer_wrap2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 850px;
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.footer_linkNAV_skill{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_about{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_portfolio{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_contact{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    user-select:none;
+    opacity: 60%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_skill_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_about_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_portfolio_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_contact_active{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    text-decoration:underline;
+    user-select:none;
+    opacity: 100%;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_skill:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_about:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_portfolio:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.footer_linkNAV_contact:hover{
+    opacity: 100%;
+    text-decoration:underline;
+    transition: all 0.25s;
+}
+
+.all_rights{
+    font-family: 'Montserrat Light';
+    font-size: 14px;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    user-select: none;
+}
+
+/*Конец кода "Подвала"*/
