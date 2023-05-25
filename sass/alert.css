@@ -1,0 +1,66 @@
+.alert {
+  width: 60%;
+  margin: 15px auto;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+  text-align: center;
+  color: #D6C199;
+}
+
+.alert:hover {
+  color: #fff;
+  border: 3px solid #fff;
+  transition: all 0.25s;
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 40px;
+  right: 15px;
+  top: 25px;
+  text-align: center;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.simple-alert {
+  background-color: transparent;
+  border: 3px solid #D6C199;
+}
+.simple-alert .close {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.success-alert {
+  background-color: transparent;
+  border: 3px solid #D6C199;
+}
+.success-alert .close {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.danger-alert {
+  background-color: transparent;
+  border: 3px solid #D6C199;
+}
+.danger-alert .close {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.warning-alert {
+  background-color: transparent;
+  border: 3px solid #D6C199;
+}
+.warning-alert .close {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}/*# sourceMappingURL=alert.css.map */
