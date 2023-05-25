@@ -1,0 +1,45 @@
+.alert{
+    width:60%;
+    margin:15px auto;
+    padding:10px;
+    position:relative;
+    border-radius:20px;
+    text-align: center;
+    color: #D6C199;
+  }
+
+  .alert:hover{
+    color: #fff;
+    border:3px solid #fff;
+    transition: all 0.25s;
+  }
+
+  .close{
+    position:absolute;
+    width:30px;
+    height:30px;
+    opacity:0.5;
+    border-width:1px;
+    border-style:solid;
+    border-radius:40px;
+    right:15px;
+    top:25px;
+    text-align:center;
+    font-size:1.6em;
+    cursor:pointer;
+  }
+  @mixin alert($name,$bgColor){
+    $accentColor:darken($bgColor,50);
+    .#{$name}{
+      background-color:#{$bgColor};
+      border:3px solid #D6C199;
+      .close{
+        border-color:$accentColor;
+        color:$accentColor;
+      }
+    }
+  }
+  @include alert(simple-alert,transparent);
+  @include alert(success-alert,transparent);
+  @include alert(danger-alert,transparent);
+  @include alert(warning-alert,transparent);
